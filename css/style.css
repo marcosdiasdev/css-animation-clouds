@@ -1,0 +1,47 @@
+section {
+    height: 800px;
+    width: 400px;
+    background-color: rgb(112, 232, 247);
+    background-image: url('mountains.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.high-cloud, .medium-cloud, .low-cloud {
+    position: absolute;
+    height: 83px;
+    width: 250px;
+    right: -250px;
+    background-image: url('clouds.png');
+    animation-name: nuvens;
+    animation-iteration-count: infinite;
+}
+
+.high-cloud {
+    top: 30px;
+    animation-duration: 15s;
+    animation-delay: 5s;
+    animation-timing-function: ease-in;
+}
+
+.medium-cloud {
+    top: 200px;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+}
+
+.low-cloud {
+    top: 350px;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes nuvens {
+    from { right: -300px; }
+    to { right: 400px; }
+}
