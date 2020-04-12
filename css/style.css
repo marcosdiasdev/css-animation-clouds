@@ -2,7 +2,7 @@ section {
     height: 800px;
     width: 400px;
     background-color: rgb(112, 232, 247);
-    background-image: url('img/mountains.png');
+    background-image: url('../img/mountains.png');
     background-position: bottom;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -15,7 +15,7 @@ section {
     height: 83px;
     width: 250px;
     right: -250px;
-    background-image: url('img/clouds.png');
+    background-image: url('../img/clouds.png');
     animation-name: nuvens;
     animation-iteration-count: infinite;
 }
